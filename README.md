@@ -28,5 +28,39 @@ A warp scheduler uses active threads and readiness to determine which warp runs 
 
 Prevents race conditions in shared resources by making sure every thread in a block reaches the barrier before any others do.
 
+## **4. Architecture with Modular Cores**
 
-The base design has been inspired by https://github.com/adam-maj/tiny-gpu
+The separate, reusable modules that make up the GPU core are:
+
+Fetcher: Gets instructions out of the program's memory.
+
+Decoder: Handles barrier instructions, decodes instructions, and detects changes in the control flow.
+
+The scheduler manages divergence-aware execution and chooses active warps.
+
+Registers: Local storage per-thread register file.
+
+Arithmetic and logic commands are carried out by the ALU.
+
+Data memory is interfaced with by LSUs (Load/Store Units).
+
+PC Unit: Oversees branch target resolution and keeps track of per-thread program counters.
+
+## **5. Configurable and parameterized**
+
+Modifiable parameters for:
+
+The quantity of cores
+
+Number of threads per block
+
+Addresses of program/data memory and data widths
+
+The quantity of memory channels
+
+Simple to scale down for small simulation runs or up for larger experiments.
+
+
+Https://github.com/adam-maj/tiny-gpu has inspired the base design.
+
+
