@@ -26,3 +26,6 @@ A warp scheduler uses active threads and readiness to determine which warp runs 
 ## **3. Barrier Synchronization Support for __syncthreads at the hardware level.**
 
 Prevents race conditions in shared resources by making sure every thread in a block reaches the barrier before any others do.
+
+
+The base design has been inspired by https://github.com/adam-maj/tiny-gpu
