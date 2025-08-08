@@ -60,16 +60,7 @@ The quantity of memory channels
 
 Simple to scale down for small simulation runs or up for larger experiments.
 
-## How to execute
 
-### Clone the Repository
-
-    git clone (https://github.com/Balavasanth-Rajadurai/MiniCUDA/tree/main/GPU_v1)
-    cd GPU_v1
-
-### Compile the GPU Design using Icarus/ModelSim
-
-### Run the Simulation
 
 
     
