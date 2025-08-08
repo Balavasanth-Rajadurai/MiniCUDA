@@ -3,9 +3,9 @@ A GPU designed using HDL
 
 A work in progress to make a more complete GPU
 
-**GPU_v1:**  The design supports Branch divergence.
+**GPU_v1:**  The design that supports Branch divergence.
 
-**GPU_v2:**  The design supports Branch divergence + Branch synchronization.
+**GPU_v2:**  The design that supports Branch divergence + Branch synchronization.
 
 # A description of the **GPU_v1** and **GPU_v2**
 
