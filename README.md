@@ -13,16 +13,16 @@ Barrier synchronization (__syncthreads) is incorporated into the design to guara
 
 ## Important Features
 
-**1. Support for Branch Divergence**
+## **1. Support for Branch Divergence**
 
 Applies active-thread masks and per-thread program counters (PCs).
 Following a conditional branch, threads within the same warp may execute distinct code paths.
-In order to resume lockstep execution, warp execution serializes for divergent paths but reconverges when feasible.
+To resume lockstep execution, warp execution serializes for divergent paths but reconverges when feasible.
 
-**2. Threads are grouped into warps by warp-based scheduling, which uses SIMT rules to execute them collectively.**
+## **2. Threads are grouped into warps by warp-based scheduling, which uses SIMT rules to execute them collectively.**
 
 A warp scheduler uses active threads and readiness to determine which warp runs in each cycle.
 
-**3. Barrier Synchronization Support for __syncthreads at the hardware level.**
+## **3. Barrier Synchronization Support for __syncthreads at the hardware level.**
 
 Prevents race conditions in shared resources by making sure every thread in a block reaches the barrier before any others do.
