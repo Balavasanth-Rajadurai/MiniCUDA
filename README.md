@@ -64,8 +64,20 @@ Simple to scale down for small simulation runs or up for larger experiments.
 
 ### Clone the Repository
 
-    git clone https://github.com/<your-username>/<repo-name>.git
-    cd <repo-name>
+    git clone (https://github.com/Balavasanth-Rajadurai/MiniCUDA/tree/main/GPU_v1)
+    cd GPU_v1
+
+### Compile the GPU Design using Icarus
+
+    iverilog -g2012 -o gpu_core \
+    src/*.sv \
+    tb/tb_gpu_core.sv
+
+### Run the Simulation
+
+    vvp gpu_core
+
+    
 
 
 
