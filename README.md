@@ -60,5 +60,12 @@ The quantity of memory channels
 
 Simple to scale down for small simulation runs or up for larger experiments.
 
+## How to execute
+
+### Clone the Repository
+
+    git clone https://github.com/<your-username>/<repo-name>.git
+    cd <repo-name>
+
 
 
