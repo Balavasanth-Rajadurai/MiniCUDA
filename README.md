@@ -61,6 +61,4 @@ The quantity of memory channels
 Simple to scale down for small simulation runs or up for larger experiments.
 
 
-Https://github.com/adam-maj/tiny-gpu has inspired the base design.
-
 
