@@ -7,7 +7,7 @@ A work in progress to make a more complete GPU
 
 **GPU_v2:**  The design that supports Branch divergence + Branch synchronization.
 
-# A description of the **GPU_v1** and **GPU_v2**
+## A description of the **GPU_v1** and **GPU_v2**
 
 Each thread in a warp can follow its execution path while preserving warp-level execution semantics thanks to the active-thread masking system and warp scheduler implemented by this GPU core.
 Barrier synchronization (__syncthreads) is incorporated into the design to guarantee that threads can safely reconverge before continuing to execute in parallel.
